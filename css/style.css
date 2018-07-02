@@ -22,9 +22,21 @@ hr{
 ul{
     list-style: none;
 }
+table{
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+thead{
+    color: #f39c12;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+th{
+    width: 30%;
+}
+
 
 .page{
-    position: relative;
+    position: fixed;
     height: 96%;
     width: 98%;
     /* border: 1px solid white; */
@@ -80,7 +92,7 @@ ul{
 
 
 /* page3 */
-.country-flag{
+.flag-icon-eu{
     width: 67px;
     height: 50px;
     background-image: url('../img/eu.svg');
@@ -88,18 +100,21 @@ ul{
     background-size: cover;
     /* text-align: center; */
 }
+.satelite{
+    text-align: center;
+}
 
 
 /* 全ページ共通 */
 .pagetitle{
-    font-size: 45px;
+    font-size: 55px;
     font-family: 'Russo One', sans-serif;
-    margin-left: 60px;
-    margin-top: 80px;
+    margin-left: 80px;
+    margin-top: 90px;
 }
 .content{
-    margin-left: 90px;
-    font-size: 50px;
+    margin-left: 110px;
+    font-size: 52px;
 }
 
 .sharp{
