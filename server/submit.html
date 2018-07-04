@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+
+    <!-- custom -->
+    <style>
+        p{
+            font-size: 25px;
+        }
+        .scripts{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input id="num" type="number" value="-1" readonly><br>
+        <!-- <button  >submit</button> -->
+        <button type="button" class="btn btn-dark" onclick="plus()">&emsp;&emsp;+&emsp;&emsp;</button>
+        <button type="button" class="btn btn-dark" onclick="minus()">&emsp;&emsp;-&emsp;&emsp;</button>
+    </div>
+    <script src="http://media.trompot.mydns.jp:18270/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        // 接続先URL指定
+        var socketio = io.connect('http://media.trompot.mydns.jp:18270/');
+        
+        // plus
+        function plus(){
+            var num = Number($('#num').val());
+            num = num + 1;
+            $('#num').val(num);
+            $("#" + (num - 1)).addClass('scripts');
+            $("#" + num).removeClass('scripts');
+            publishMessage();
+        }
+
+        // minus
+        function minus(){
+            var num = Number($('#num').val());
+            num = num - 1;
+            $('#num').val(num);
+            $("#" + (num+1)).addClass('scripts');
+            $("#" + num).removeClass('scripts');
+            publishMessage();
+        }
+
+        // 送信
+        function publishMessage() {
+            var msg = $('#num').val();
+            socketio.emit("publish", { value: msg });
+        }
+    </script>
+    <br><br>
+
+    <div class="scripts" id="0">
+        <p>Hello. Now, Map application, Navigation and National defence etc., Navigation Satelite System is indispensable item. So,
+        I talk about Japanses NSS, Michibiki.</p>
+    </div>
+
+    <div class="scripts" id="1">
+        <p>Do you know Michibiki?</p>
+    </div>
+
+    <div class="scripts" id="2">
+        <p>Michibiki is Japanses Artifical Satelite. <br>The Cabinet Office government of Japan launched to construct a system of Quasi-Zenith
+        Satelite System(QZSS). <br><br>Purpose of GPS is Complements GPS for satelite positioning, navigation and timing service that is
+        more precise and statble.</p>
+    </div>
+
+    <div class="scripts" id="3">
+        <p>Please have a look at this chart. <br>This is Navigation Satelite System of World. In 2011 the Government of Japan has decided
+        to accelerate the QZSS <br>deployment in order to reach a 4-satelites constellation by the late 2010s, while aiming at a final
+        7-satelites constellation in the future. <br><br>GPS Precision is about 10m. But Michibiki is a few cm. Government of Japan aims
+        improve of QZSS accuracy.</p>
+    </div>
+
+    <div class="scripts" id="4">
+        <p>The system has merit and demerit. About merit. Services have always been offered in a statble way. and Increasing the nunber
+        of QZSS to improve positioning errors! But that has Demerit. <br>After all, very Expensive!</p>
+    </div>
+
+    <div class="scripts" id="5">
+        <p>This system costs 3 hundred billion!<br>But this system will givce you a good life.</p>
+    </div>
+
+    <div class="scripts" id="6">
+        <p>thank you</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

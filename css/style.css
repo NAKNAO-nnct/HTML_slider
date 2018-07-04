@@ -65,14 +65,14 @@ img{
 .title{
     position: absolute;
     text-align: center;
-    top: 150px;
+    top: 200px;
     right: 0;
     bottom: 0;
     left: 0;
     font-family: 'Russo One', sans-serif;
 }
 .title h1{
-    font-size: 120px;
+    font-size: 90px;
 }
 
 .title h2{
@@ -169,10 +169,17 @@ img{
 
 
 /* expensive page */
+.about{
+    margin-top: 140px;
+    margin-left: 50px;
+    font-size: 50px;
+    font-family: 'Russo One', sans-serif;
+}
 .money{
-    width: 650px;
-    margin-top: -210px;
-    left: 470px;
+    width: 520px;
+    margin-top: -245px;
+    /* top: 70; */
+    left: 60px;
 }
 
 /* 全ページ共通 */
@@ -183,7 +190,7 @@ img{
     margin-top: 50px;
 }
 .content{
-    margin-left: 50px;
+    margin-left: 60px;
     font-size: 52px;
 }
 
@@ -224,3 +231,4 @@ img{
 
 /* 色定義
 https://flatuicolors.com/palette/defo */
+

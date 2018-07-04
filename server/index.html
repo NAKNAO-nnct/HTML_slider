@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <!-- Socketio 指定 -->
+    <script src="http://media.trompot.mydns.jp/socket.io/socket.io.js"></script>
+
+    <script type="text/javascript">
+
+        // 接続先アドレス(URL or IP)指定
+        var socketio = io.connect('media.trompot.mydns.jp:9500');
+        socketio.on("publish", function (data) {
+            console.log(data.value);
+        });
+
+
+    </script>
+
+</body>
+
+</html>

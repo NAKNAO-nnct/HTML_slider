@@ -28,6 +28,8 @@
     <!-- MathJax -->
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
 
+    <!-- deffine -->
+    <script src="js/deffine.js"></script>
 </head>
 
 <body>
@@ -194,12 +196,12 @@
 
     <!-- expensive -->
     <div class="page nonono" id="page6">
+        <div class="about"><h1>about</h1></div>
         <div class="title">
             <h1>
-                <font style="right: 20px;">about</font>
-                <img src="img/5000.png" class="money">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <img src="img/5000.png" class="money">&emsp;&emsp;&emsp;&emsp;&emsp;
                 <font color="#c0392b">× 3/5 × 10
-                    <sup>-9</sup>
+                    <sup>-4</sup>
                 </font>
             </h1>
             <h2>
@@ -222,7 +224,8 @@
         </div>
     </div>
 
- 
+
+   
 
 
     <!-- jQuery -->
@@ -241,6 +244,21 @@
 
     <!-- custom js -->
     <script src="js/controller.js"></script>
+
+    <!-- Socketio 指定 -->
+    <script src="http://media.trompot.mydns.jp:18270/socket.io/socket.io.js"></script>
+    
+    <script type="text/javascript">
+
+        // 接続先アドレス(URL or IP)指定
+        var socketio = io.connect(socket_url);
+        socketio.on("publish", function (data) {
+            console.log(data.value);
+            nextPage(data.value);
+        });
+
+
+    </script>
 </body>
 
 </html>
