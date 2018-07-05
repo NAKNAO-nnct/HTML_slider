@@ -17,7 +17,7 @@ $(function () {
 
 // var page = ["page1", "page2-1", "page2-2", "page2-3"];
 
-var page = ["#page1", "#page2", "#page3", "#page4", "#page5", "#page6", "#page7", "#page8"];
+var page = [ "#page1", "#page2", "#page3", "#page4", "#page5", "#page6", "#page7", "#page8"];
 function nextPage(num){
     // if (num != 0) {
     //     $("#" + page[num - 1]).addClass("nonono");

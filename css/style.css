@@ -232,3 +232,22 @@ img{
 /* 色定義
 https://flatuicolors.com/palette/defo */
 
+
+
+
+@keyframes swap{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes feadout{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
