@@ -1,0 +1,74 @@
+{
+  "title": {
+    "title": "情報工学実験Ⅲ",
+    "subtitle": "オセロAIの実験",
+    "expdate": ["2018年7"],
+    "submitdate": "2018年10月1日",
+    "author": "中野雄貴",
+    "collabortaor": [
+      "22番 辻本陸大",
+      "23番 長尾匠真",
+      "25番 中満悠人",
+      "26番 中村翼",
+      "26番 中村翼",
+      "28番 野口龍平"
+    ]
+  },
+  "article": [
+    {
+      "chapter": "アブストラクト",
+      "chapterNote": "",
+      "section": [
+        {
+          "title": "",
+          "contents": "",
+          "subsection": [
+            {
+              "title": "",
+              "contents": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter": "実験理論",
+      "chapterNote": "",
+      "section": [
+        {
+          "title": "1.1 攻撃",
+          "contents": [
+            {
+              "type": "text",
+              "contents": "お城攻め"
+            }
+          ],
+          "subsection": [
+            {
+              "title": "1.1.1 お城",
+              "contents": [
+                {
+                  "type": "figure",
+                  "url": "images/figure2.jpg",
+                  "label": ""
+                },
+                {
+                  "type": "figure",
+                  "url": "images/figure2.jpg",
+                  "label": ""
+                }
+              ]
+            },
+            {
+              "contents": {
+                "type": "table",
+                "url": "",
+                "label": ""
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
