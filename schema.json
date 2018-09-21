@@ -1,70 +1,36 @@
 {
   "title": {
-    "title": "情報工学実験Ⅲ",
-    "subtitle": "オセロAIの実験",
-    "expdate": ["2018年7"],
-    "submitdate": "2018年10月1日",
-    "author": "中野雄貴",
-    "collabortaor": [
-      "22番 辻本陸大",
-      "23番 長尾匠真",
-      "25番 中満悠人",
-      "26番 中村翼",
-      "26番 中村翼",
-      "28番 野口龍平"
-    ]
+    "title": "題名",
+    "subtitle": "副題",
+    "expdate": ["実験日1", "実験日2", "...list形式で"],
+    "submitdate": "提出日",
+    "author": "執筆者",
+    "collabortaor": ["共同実験車1", "共同実験車2", "...list形式で"]
   },
   "article": [
     {
-      "chapter": "アブストラクト",
-      "chapterNote": "",
+      "chapter": "章題",
+      "chapterNote": "章説明",
       "section": [
         {
-          "title": "",
-          "contents": "",
-          "subsection": [
-            {
-              "title": "",
-              "contents": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "chapter": "実験理論",
-      "chapterNote": "",
-      "section": [
-        {
-          "title": "1.1 攻撃",
+          "title": "節題",
+          "chapterNote": "節説明",
           "contents": [
             {
-              "type": "text",
+              "type": "種類(text or figure or table)",
               "contents": "お城攻め"
             }
           ],
           "subsection": [
             {
-              "title": "1.1.1 お城",
+              "title": "小節題",
               "contents": [
                 {
-                  "type": "figure",
-                  "url": "images/figure2.jpg",
-                  "label": ""
-                },
-                {
-                  "type": "figure",
-                  "url": "images/figure2.jpg",
-                  "label": ""
+                  "type": "種類(text or figure or table)",
+                  "contents": "お城攻め",
+                  "label" : "図表ラベル ※option"
                 }
               ]
-            },
-            {
-              "contents": {
-                "type": "table",
-                "url": "",
-                "label": ""
-              }
             }
           ]
         }
